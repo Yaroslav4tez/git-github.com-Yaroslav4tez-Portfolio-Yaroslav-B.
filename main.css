@@ -1,0 +1,125 @@
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+ /*colors and stile for background, text position START*/
+ body {
+    margin: 0;
+    padding: 0;
+ }
+
+ header {
+    background: linear-gradient( #ceecf0, #f5f7f7);
+    margin-bottom: 0;
+ }
+
+ main {
+    width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(to right, #f5f7f7, #ceecf0);
+ }
+
+ aside {
+    width: 9%;  
+    background: linear-gradient(to right, #ceecf0, #f5f7f7);
+ }
+
+ footer {
+    background: linear-gradient(to right, #f5f7f7, #ceecf0);
+ }
+
+ .container {
+    display: flex;
+    gap: 0;
+ }
+
+ .empty {
+    width: 5%;
+    background: linear-gradient(to left, #f5f7f7, #ceecf0);
+ }
+
+ h1, h2, h3 {
+    text-align: center;
+ }
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/*colors and stile for background, text position END*/
+
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/*Tables style_START*/
+table {
+    width: 100%;
+    background-color: beige;
+    padding: 10px;   
+}
+.green_6_7 {
+    background-color: rgb(173, 248, 173);
+}
+.green_8_9 {
+    background-color: rgb(173, 248, 173);
+}
+
+td {
+    text-align: center;
+    padding-top: 0;
+    font-size: 70%;
+}
+.blue_4_5_6_7 {
+    background-color: rgb(151, 151, 251);
+ }
+
+ .yellow_4_5_6_7 {
+    background-color: rgb(249, 249, 176);
+ }
+ .red_1-7 {
+    background-color: rgb(213, 139, 139);
+ }
+.grey_Group td:not(.nochild):nth-child(odd) {
+  background-color: rgb(191, 181, 181);
+}
+.grey_Group td:not(.nochild):nth-child(even) {
+  background-color: rgb(225, 222, 222);
+}
+.nochild {
+    width: 1%;
+}
+/**//**//**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**/
+/*Tables style_STOP*/
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip_content {
+  position: absolute;
+  top: 100%; /* нижче комірки */
+  left: 50%;
+  transform: translateX(-0%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 10;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.tooltip:hover .tooltip_content {
+  display: block;
+}
+
+.tooltip_content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tooltip_content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
