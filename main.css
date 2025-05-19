@@ -88,12 +88,12 @@ td {
 /**//**//**//**//**//**//**//**//**//**//**//**/
 /*Tables style_STOP*/
 
-.tooltip {
+.more_info {
   position: relative;
   cursor: pointer;
 }
 
-.tooltip_content {
+.more_info_content {
   position: absolute;
   top: 100%; /* нижче комірки */
   left: 50%;
@@ -108,18 +108,23 @@ td {
   display: none;
 }
 
-.tooltip:hover .tooltip_content {
+.more_info:hover .more_info_content {
   display: block;
 }
 
-.tooltip_content img {
+.more_info_content img {
   max-width: 100%;
   height: auto;
   display: block;
   margin-bottom: 5px;
 }
 
-.tooltip_content pre {
+.more_info_content pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+
+input {
+   margin-top: 30px;
 }
